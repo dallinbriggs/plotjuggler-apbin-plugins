@@ -11,6 +11,7 @@ set(CMAKE_AUTOMOC ON)
 SET(CMAKE_AUTOUIC ON)
 
 find_package(Qt5 REQUIRED COMPONENTS
+    Concurrent
     Core
     Widgets
     Xml
@@ -23,6 +24,7 @@ include_directories(
     ${Qt5Svg_INCLUDE_DIRS} )
 
 set(QT_LIBRARIES
+    Qt5::Concurrent
     Qt5::Core
     Qt5::Widgets
     Qt5::Xml
